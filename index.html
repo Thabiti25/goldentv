@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vevo TV Max</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <!-- App Header -->
+        <div class="app-header">
+            <img src="https://i.postimg.cc/gJT8DRLp/vevo-log5.png" class="app-icon" alt="App Icon">
+            <div class="app-info">
+                <h1 class="app-title">GOLDEN TV</h1>
+                <div class="app-developer">Golden Tech</div>
+                <div class="app-rating">
+                    <span class="rating-stars">★★★★☆</span>
+                    <span>1.2M reviews</span>
+                    <span>10M+ downloads</span>
+                    <span>Rated for 3+</span>
+                </div>
+                <a href="Vevo Tv Max-1.5.apk" class="install-button animate__animated animate__pulse animate__infinite">Download Now</a>
+            </div>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshot-container">
+                <img src="https://i.postimg.cc/SQcc8XNh/IMG-20251108-004621.jpg" class="screenshot animate__animated" alt="Screenshot">
+                <img src="https://i.postimg.cc/SQcc8XNh/IMG-20251108-004621.jpg" class="screenshot animate__animated" alt="Screenshot">
+                <img src="https://i.postimg.cc/SQcc8XNh/IMG-20251108-004621.jpg" class="screenshot animate__animated" alt="Screenshot">
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <h2>About this app</h2>
+            <p class="description-text">
+                Golden Tv is an app to watch all sports, news and entertainment channels through your mobile phone. Enjoy our app and share it with your relatives, friends and family.
+                <br><br>
+                <strong>Features:</strong>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>1000+ Live TV channels</li>
+                    <li>Sports coverage from around the world</li>
+                    <li>News channels in multiple languages</li>
+                    <li>Entertainment and movie channels</li>
+                    <li>User-friendly interface</li>
+                    <li>Regular updates with new channels</li>
+                </ul>
+                <span class="read-more">Read more ▼</span>
+            </p>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="additional-info">
+            <div class="info-box">
+                <div class="info-title">Updated</div>
+                <div>Jun 20, 2025</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Size</div>
+                <div>12.30 MB</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Current Version</div>
+                <div>3.3</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Downloads</div>
+                <div>10,000,000+</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced "Read More" functionality with shake effect
+        const readMoreBtn = document.querySelector('.read-more');
+        const description = document.querySelector('.description-text');
+        
+        readMoreBtn.addEventListener('click', function() {
+            description.classList.toggle('expanded');
+            this.textContent = description.classList.contains('expanded') ? 'Read less ▲' : 'Read more ▼';
+            
+            // Add shake animation to container
+            const container = document.querySelector('.container');
+            container.classList.add('shake');
+            setTimeout(() => {
+                container.classList.remove('shake');
+            }, 500);
+        });
+        
+        // Add hover animations to screenshots
+        const screenshots = document.querySelectorAll('.screenshot');
+        screenshots.forEach((screenshot, index) => {
+            screenshot.addEventListener('mouseenter', () => {
+                screenshot.classList.add('animate__animated', 'animate__pulse');
+            });
+            
+            screenshot.addEventListener('mouseleave', () => {
+                setTimeout(() => {
+                    screenshot.classList.remove('animate__animated', 'animate__pulse');
+                }, 1000);
+            });
+            
+            // Staggered animation on load
+            setTimeout(() => {
+                screenshot.classList.add('animate__fadeInRight');
+            }, 200 * index);
+        });
+        
+        // Add animation to download button on hover
+        const downloadBtn = document.querySelector('.install-button');
+        downloadBtn.addEventListener('mouseenter', () => {
+            downloadBtn.classList.add('animate__rubberBand');
+        });
+        
+        downloadBtn.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                downloadBtn.classList.remove('animate__rubberBand');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
