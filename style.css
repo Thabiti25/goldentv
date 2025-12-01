@@ -24,7 +24,7 @@
             overflow: hidden;
             padding: 30px;
             position: relative;
-            border-top: 5px solid #FF6B00;
+            border-top: 5px solid #FFD700;
             transform: translateY(0);
             transition: transform 0.3s;
         }
@@ -48,7 +48,7 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background: linear-gradient(90deg, transparent 0%, #FF6B00 50%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, #FFD700 50%, transparent 100%);
         }
         
         .app-icon {
@@ -57,7 +57,7 @@
             border-radius: 25px;
             margin-right: 25px;
             object-fit: cover;
-            border: 3px solid #FF6B00;
+            border: 3px solid #FFD700;
             box-shadow: 0 5px 15px rgba(255,107,0,0.3);
             transition: transform 0.3s;
         }
@@ -74,7 +74,7 @@
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 5px;
-            color: #FF6B00;
+            color: #FFD700;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         }
         
@@ -102,7 +102,7 @@
         
         .install-button {
             display: inline-block;
-            background: linear-gradient(135deg, #FF6B00 0%, #FF8C00 100%);
+            background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
             color: white;
             padding: 12px 25px;
             border-radius: 30px;
@@ -120,7 +120,7 @@
         .install-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 7px 15px rgba(255,107,0,0.4);
-            background: linear-gradient(135deg, #FF8C00 0%, #FF6B00 100%);
+            background: linear-gradient(135deg, #FF8C00 0%, #FFD700 100%);
         }
         
         h2 {
@@ -138,7 +138,7 @@
             left: 0;
             width: 50px;
             height: 3px;
-            background: #FF6B00;
+            background: #FFD700;
             border-radius: 3px;
         }
         
@@ -148,7 +148,7 @@
             overflow-x: auto;
             padding-bottom: 15px;
             scrollbar-width: thin;
-            scrollbar-color: #FF6B00 #f0f0f0;
+            scrollbar-color: #FFD700 #f0f0f0;
         }
         
         .screenshot-container::-webkit-scrollbar {
@@ -161,7 +161,7 @@
         }
         
         .screenshot-container::-webkit-scrollbar-thumb {
-            background-color: #FF6B00;
+            background-color: #FFD700;
             border-radius: 10px;
         }
         
@@ -191,7 +191,7 @@
         }
         
         .read-more {
-            color: #FF6B00;
+            color: #FFD700;
             cursor: pointer;
             font-weight: 600;
             display: inline-block;
@@ -218,7 +218,7 @@
             background: #f9f9f9;
             padding: 15px;
             border-radius: 10px;
-            border-left: 4px solid #FF6B00;
+            border-left: 4px solid #FFD700;
             transition: all 0.3s;
             box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
